@@ -56,7 +56,7 @@
     border-radius: 0.625rem;
     background: #DBB5AC;
     transform-origin: center center;
-    transform: scale(1);
+    transform: scale(0.795);
     transition: transform 0.5s;
     position: relative;  
     display: flex;
@@ -66,7 +66,7 @@
   }
 
   .slides > div:target {
-    transform: scale(0.8);
+    transform: scale(0.799);
   } 
 
   .author-info {
@@ -109,7 +109,7 @@
   }
 
   .slider > a:active {
-    top: 1px;
+    top: 0.063rem;
   }
 
   .slider > a:focus {
@@ -140,3 +140,196 @@
     align-items: center;
     justify-content: center;
   }
+
+  /* Screen larger than 320px (Mobile)? 1 column */
+@media (min-width: 320px) {
+  .slider {
+    width: 11.25rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;  
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(4.75rem);
+    scroll-snap-type: mandatory;
+  }
+  .slides::-webkit-scrollbar {
+    width: 0.425rem;
+    height: 0.425rem;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0.425rem;
+  }
+  .sliders > .slider {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 17.5rem;
+    height: 17.5rem;
+    margin-right: 1.125rem;
+    border-radius: 0.425rem;
+    background: #DBB5AC;
+    transform-origin: center center;
+    /* transform: scale(0.795); */
+    transition: transform 0.5s;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.463rem;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 3.5%;
+    height: 3.5%;
+    background: #F0221D;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12.5%;
+    margin: 0% 0% 1.25% 0%;
+    /* padding: 25% 25% 25% 25%; */
+    position: relative;
+    font-size: 0.7rem;
+  }
+
+  .slider > a:active {
+    top: 0.01575rem;
+  }
+}
+
+  /* Screen larger than 768px (Tablet)? 2 column */
+@media (min-width: 768px) {
+  .slider {
+    width: 21.25rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;  
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(8.75rem);
+    scroll-snap-type: mandatory;
+  }
+  .slides::-webkit-scrollbar {
+    width: 0.525rem;
+    height: 0.525rem;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0.525rem;
+  }
+  .sliders > .slider {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 27.5rem;
+    height: 27.5rem;
+    margin-right: 2.125rem;
+    border-radius: 0.525rem;
+    background: #DBB5AC;
+    transform-origin: center center;
+    /* transform: scale(0.795); */
+    transition: transform 0.5s;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.563rem;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 5%;
+    height: 5%;
+    background: #F0221D;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    margin: 0% 0% 2.5% 0%;
+    /* padding: 25% 25% 25% 25%; */
+    position: relative;
+  }
+
+  .slider > a:active {
+    top: 0.0315rem;
+  }
+}
+
+/* Screen larger than 1024px (Desktop)? 3 columns */
+@media (min-width: 1024px) {
+  .slider {
+    width: 31.25rem;
+    text-align: center;
+    overflow: hidden;
+  }
+  .slides {
+    display: flex;  
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(18.75rem);
+    scroll-snap-type: mandatory;
+  }
+  .slides::-webkit-scrollbar {
+    width: 0.625rem;
+    height: 0.625rem;
+  }
+  .slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 0.625rem;
+  }
+  .sliders > .slider {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 37.5rem;
+    height: 37.5rem;
+    margin-right: 3.125rem;
+    border-radius: 0.625rem;
+    background: #DBB5AC;
+    transform-origin: center center;
+    /* transform: scale(0.795); */
+    transition: transform 0.5s;
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.563rem;
+  }
+  .slider > a {
+    display: inline-flex;
+    width: 5%;
+    height: 5%;
+    background: #F0221D;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0% 0% 5% 0%;
+    /* padding: 25% 25% 25% 25%; */
+    position: relative;
+  }
+
+  .slider > a:active {
+    top: 0.063rem;
+  }
+}
