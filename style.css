@@ -1,128 +1,657 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto Slab, sans-serif;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
   text-align: center;
   text-justify: center;
-  background-color: #F4E6E0;
+  background-image: linear-gradient(to top left, #f0f0f0, #DBB5AC);
+  
 }
 
 /* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab'); */
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.25rem;
-    background-color: #F4E6E0;
-    /* #f0f0f0 */
-    border: 0.063rem solid #333;
-  }
-  
+/* Hero-Grid */
+
+.grid-container{
+  display: grid;
+  gap: 0.625rem;
+  grid-template: repeat(2, 1fr);
+  grid-auto-rows: minmax(6.25rem,auto);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 2rem;
+  border: 0.063rem solid #DBB5AC;
+  /* #333 */
+  border-radius: 5%;
+  background-color: #F4E6E0;
+  /* background-color: #DBB5AC; */
+}
+/* pet drug h1 */
+.hero-pdh1 {
+  grid-column: 1;
+  grid-row: 1 / 1;
+  text-align: center;
+  font-size: 3rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  /* 0.0625rem 0.0625rem */
+}
+.h1-p {
+  font-size: 1.5rem;
+}
+.hero-pdhi1 {
+  grid-column: 2;
+  grid-row: 1 / 1;
+  text-align: center;
+  object-fit: cover;
+}
+.hero-pdhi1 > img {
+  border-radius: 100%;
+}
+/* why pet drug h1 */
+.hero-wpd {
+  grid-column: 1 / 3;
+  grid-row: 2;
+  text-align: center;
+  object-fit: cover;
+  /* padding: 20%; */
+  padding-top: 7%;
+  padding-bottom: 10%;
+  color: #f0f0f0;
+  text-shadow: 0.0625rem 0.0625rem #070403;
+}
+.Why-h1 {
+  font-size: 6rem;
+}
+.Wh1-p {
+  font-size: 1.5rem;
+}
+#hero-1 {
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/hero-section-petdrug1024x683.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5%;
+}
+#hero-2 {
+  opacity: 1;
+  /* transition: all 300ms ease-in-out; */
+  color: azure;
+  text-shadow: 0.063rem 0.063rem #070403;
+  background-color: rgba(240, 34, 29, 0.15);
+  border-radius: 5%;
+}
+  /* border-top-left-radius: 100%; */
+  /* border-top-left-radius: 100%; */
+  /* filter: drop-shadow(16px 16px 20px) invert(75%); */
+  /* #hero-2:hover {
+    opacity: 1;
+  }  */
+.hero-cta {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  text-align: center;
+}
+/* Call to Action / CTA Button */
+#b-product {
+  background-color: #F0221D;
+  /* color: #f0f0f0; */
+  border-radius: 50%;
+  padding: 0.75%;
+  font-size: 1.65rem;
+  /* text-shadow: 0.063rem 0.063rem #070403; */
+}
+.b-other {
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 0.45%;
+  font-size: 1.15rem;
+}
+
+/* Product Section */
+
+.product-section {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.P-drug {
+  font-size: 1.35rem;
+}
+
+.sliders-pd {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/herosect-Pet-Medications950x525.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Vaccine Section + Core*/
+
+.Vaccine-section {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.our-v {
+  font-size: 1.5rem;
+}
+
+.P-vac {
+  font-size: 1.35rem;
+}
+
+.sliders {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/kitten-vaccinated-shutterstock_1503829781-1-400x266s.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Non - Core Vaccine Section */
+
+.Nc-section {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.P-ncvac {
+  font-size: 1.35rem;
+}
+
+.sliders-nc {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/lifestyle-vac400x266.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Combination Vaccine Section */
+
+.Cv-section {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.P-cvac {
+  font-size: 1.35rem;
+}
+
+.sliders-cv {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/core-vac-hamster-covid-testing-400x266.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Supplement Section */
+.Supp-section {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.P-supplement {
+  font-size: 1.35rem;
+}
+
+.sliders-su {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("content-assets/Logo_466x504_DreamShaper_v7_Please_make_a_vector_icon_image_of_cat_and_dog_08.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*Services Section + Consultations*/
+
+.Our-services {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.h3-cons {
+  font-size: 1.5rem;
+}
+
+.P-cons {
+  font-size: 1.35rem;
+}
+
+.sliders-cu {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("content-assets/Logo_439x496_DreamShaper_v7_Please_make_a_vector_icon_image_of_cat_and_dog_27.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Vaccination Section */
+.Vacs-Sect {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.Vac-P {
+  font-size: 1.35rem;
+}
+
+.sliders-va {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("content-assets/DogCat_400x480_DreamShaper_v7_Please_make_a_vector_icon_image_of_cat_and_dog_02.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* Check-Up Section */
+.Our-CU {
+  /* text-align: center; */
+  font-size: 2rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  background-color: #F4E6E0;
+  border-radius: 8%;
+  /* 0.0625rem 0.0625rem */
+}
+
+.CU-P {
+  font-size: 1.35rem;
+}
+
+.sliders-cus {
+  /* background-color: #F4E6E0; */
+  border-radius: 8%;
+  opacity: 1;
+  background-image: url("content-assets/Cat_Dog_400x351_DreamShaper_v7_Please_make_a_vector_icon_image_of_cat_and_dog_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/* #b-service
+#b-book */
   /* .logo img {
     width: 100px;
     height: auto;
   } */
   
-  nav > ul {
+/*  */
+
+/* DO NOT FORGET */
+
+/* nav > figure > div > .display-menu {
+  border-left: 20rem;
+  padding-left: 20rem;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+} */
+
+/* .display-menu {
+  border-left: 2500rem;
+} */
+
+/* nav > div > ul >  */
+
+
+/* #ul-menu  */
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: white ;
+  /* #f0f0f0 #F4E6E0 #A49C98*/
+  /* border: 0.063rem solid #333; */
+  border-top-right-radius: 25%;
+  border-bottom-left-radius: 25%;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1.25rem;
+  margin-left: auto;
+  margin-right: 0.9375rem; 
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Pet Logo */
+/* nav > span > img {
+  height: 6.125rem;
+  width: auto;
+} */
+  /* padding: 0.5rem;
+  border-left: 100%;
+  border-right: 100%; */
+
+nav > figure > div > div > img  {
+  height: 3.875rem;
+  width: auto;
+  /* padding-right: 25rem; */
+  padding-top: 0.05rem;
+  /* margin-bottom: 2rem;
+  padding: 0.5rem; */
+}
+
+nav > figure > .display-icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* previously : 
+  display: flex;
+  flex-direction: row; */
+}
+
+/* nav > figure >  */
+.pet-drug-h {
+/* height: 3.875rem; */
+/* width: auto; */
+/* padding-left: 8rem; */
+/* padding-bottom: 0.000005rem; */
+/* margin-bottom: 50rem; */
+/* padding-bottom: 10rem; */
+/* align-self: center; */
+/* text-align:center; */
+display: grid;
+align-items: center;
+/* justify-items: center; */
+}
+
+nav > figure > div .circle-white {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 0.425rem;
+  background-color: #F0221D;
+  border-radius: 100%;
+  width: 0.525rem;
+  height: 0.525rem;
+  color: #F4F4F4 ;
+  /* color: #4F200D; */
+  top: 0.3125rem;
+  padding: 0.3125rem;
+  /* margin-bottom: 500rem; */
+  /* margin-left: 8.5rem; */
+  /* right: -5px; */
+}
+
+/* .circle-white {
+  padding: 0.3125rem;
+  margin-bottom: 50rem;
+} */
+
+.relative-place {
+  position: relative;
+  padding-right: 0.05rem;
+}
+
+/* nav > div >  */
+
+.display-menu {
+  padding-left: 0.5rem;
+}
+
+#ul-menu {
+  list-style-type: none;
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1.25rem;
+  /* padding-left: 22.5rem; */
+  color: #111;
+  /* font-size: 0.005rem; */
+  padding-top: 4rem;
+  margin-top: 0.005rem;
+}
+
+/* Hamburger Button - not success yet */
+
+/* nav > figure > div > div > img */
+
+/* #stack-cat {
+  height: 3.875rem;
+  width: auto;
+  padding-top: 0.05rem;
+} */
+
+  /* padding-right: 25rem; */
+  /* margin-bottom: 2rem;
+  padding: 0.5rem; */
+
+
+/* nav > div > div >  */
+
+/* .toggle {
+  height: 3.875rem;
+  width: auto;
+  padding-top: 0.05rem;
+} */
+
+/* padding-right: 25rem; */  
+  /* margin-bottom: 2rem; */
+  /* padding: 0.5rem; */
+
+
+ /* nav > div > .toggle {
+    padding-left: 23.6rem;
+    padding-top: 3rem;
+  } */
+/*
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 0.9rem;
+  background-position: center;
+  cursor: pointer;
+} */
+
+/* background: url(https://i.ibb.co/rt3HybH/close.png); */
+
+/* TOOGGLE */
+
+/* .toggle.active {
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.showcase.active {
+  right: 8rem;
+}
+
+.showcase video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 20%;
+  object-fit: cover;
+  opacity: 0.8;
+} */
+
+
+
+/* 'content-assets/HamburgerHamster_500s_DreamShaper_v7_Please_make_a_vector_icon_image_of_stacked_hams_3(1).jpg' */
+/*  .showcase { padding: 100px; } */
+/* @media padding: 2.5rem; */
+/* .menu ul li a:hover { previously #03a9f4 }*/
+
+  /* for burger button, not yet suceed so make it as a note first */
+
+  /* @media (min-width: 768px) {
+    .toogle {
+      display: None;
+    }
+  }   */
+ 
+/*  .showcase header {
+    display: block;
+  } */
+
+  /* @media (max-width: 320px) {
+    .toogle {
+      display: block;
+    }
+
+    #ul-menu {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding-left: 22.5rem;
+      color: #111;
+      font-size: 0.005rem;
+    }
+
+    #ul-menu {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     gap: 1.25rem;
-    margin-left: auto;
-    margin-right: 0.9375rem; 
-  }
-  
-  nav > ul > li > a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    display: inline-block;
-  }
-  /* for burger button, not yet suceed so make it as a note first */
-  /* .toggle {
-    position: relative;
-    width: 60px;
-    height: 60px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png);
-    background-repeat: no-repeat;
-    background-size: 30px;
-    background-position: center;
-    cursor: pointer;
-  }
-  .toggle.active {
-    background: url(https://i.ibb.co/rt3HybH/close.png);
-    background-repeat: no-repeat;
-    background-size: 25px;
-    background-position: center;
-    cursor: pointer;
-  }
+    padding-left: 25rem;
+    color: #111;
+    font-size: 0.005rem;
+    }
 
-  .showcase {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #111;
-    transition: 0.5s;
-    z-index: 2;
-  }
-  .showcase.active {
-    right: 300px;
-  }
-  
-  .showcase video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.8;
-  }
+    .showcase {
+      position: absolute;
+      right: 0;
+      width: 20%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f0f0f0;
+      transition: 0.5s;
+      z-index: 2;
+    }
+    .showcase.active {
+      right: 8rem;
+    }
+    
+    .showcase video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 20%;
+      object-fit: cover;
+      opacity: 0.8;
+    }
 
-  @media (max-width: 991px) {
-    .showcase,
-    .showcase header {
-      padding: 40px;
+    .menu {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1rem;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu ul {
+      position: relative;
+    }
+    .menu ul li {
+      list-style: none;
+    }
+    .menu ul li a {
+      text-decoration: none;
+      font-size: 3.125rem;
+      color: #111;
+    }
+    .menu ul li a:hover {
+      color: #F0221D;
     }
   } */
 
-  /* .menu {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menu ul {
-    position: relative;
-  }
-  .menu ul li {
-    list-style: none;
-  }
-  .menu ul li a {
-    text-decoration: none;
-    font-size: 24px;
-    color: #111;
-  }
-  .menu ul li a:hover {
-    color: #03a9f4;
+  /*BOOK APPOINTMENT*/
+
+  /* .Appointment {
+    display: table-column;
+    width: 81.90rem;
   } */
+
+  fieldset {
+    border-radius: 0.625rem;
+  }
+
+  #Other-alt {
+    display: none;
+  }
 
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
-    background-color: #F4E6E0;
-    /* #f0f0f0 */
+    background-color: #f0f0f0;
+    /* #F4E6E0 */
     border: 0.063rem solid #333;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
   }
 
   nav > div > ul {
@@ -131,6 +660,7 @@ footer {
     gap: 1.25rem;
     margin-left: auto;
     margin-right: 0.9375rem; 
+    /* padding-left: 25rem; */
   }
 
   nav > div > ul > li > a {
@@ -146,9 +676,10 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem;
-    background-color: #F4E6E0;
-    /* #f0f0f0 */
+    background-color: #f0f0f0;
+    /* #F4E6E0 */
     border: 0.063rem solid #333;
+    border-radius: 15%;
   }
 
   .news > div > ul {
@@ -168,7 +699,7 @@ footer {
   
   /* Sister Company Section Grid */
   .cards {
-    max-width: 200rem;
+    max-width: 100rem;
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
@@ -185,23 +716,184 @@ footer {
     display: grid;
     place-items: center;
     font-family: sans-serif;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 1rem;
     /* padding 1rem, previous height 4 rem font size 0.425rem 0.75rem */
     text-align: justify;
+    border-radius: 0.625rem;
   }
 
 /* Screen larger than 320px (Mobile)? 1 column */
 @media (min-width: 320px) {
-  .cards { grid-template-columns: 1fr; }
+  .cards { 
+    grid-template-columns: 1fr; 
+    max-width: 25rem;
+  }
+  .card {
+    font-size: 0.25rem;
+  }
 }
 
-  /* Screen larger than 769px (Tablet)? 2 column */
+  /* Screen larger than 768px (Tablet)? 2 column */
 @media (min-width: 768px) {
-  .cards { grid-template-columns: repeat(2, 1fr); }
+  .cards { 
+    grid-template-columns: repeat(2, 1fr); 
+    max-width: 50rem;
+  }
+  .card {
+    font-size: 0.5rem;
+  }  
 }
 
 /* Screen larger than 1024px (Desktop)? 3 columns */
 @media (min-width: 1024px) {
-  .cards { grid-template-columns: repeat(3, 1fr); }
+  .cards { 
+    grid-template-columns: repeat(3, 1fr); 
+    max-width: 100rem;
+  }
+  .card {
+    font-size: 0.8rem;
+  }
+}
+
+/* Screen no larger than 768px (Tablet)? 2 column */
+@media (max-width: 768px) {
+  /* pet drug h1 */
+.hero-pdh1 {
+  grid-column: 1;
+  grid-row: 1 / 1;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #111011;
+  text-shadow: 0.0625rem 0.0625rem #F0221D;
+  /* 0.0625rem 0.0625rem */
+}
+.h1-p {
+  font-size: 1.25rem;
+}
+}
+
+/* Screen no larger than 320px (Mobile)? 1 column */
+@media (max-width: 320px) {
+
+.grid-container{
+  display: grid;
+  gap: 0.3125rem;
+  grid-template: repeat(1, 1fr);
+  grid-auto-rows: minmax(3.125rem,auto);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 0.5rem;
+  border: 0.0315rem solid #DBB5AC;
+  /* #333 */
+  border-radius: 2.5%;
+  background-color: #F4E6E0;
+  /* background-color: #DBB5AC; */
+}
+/* pet drug h1 */
+.hero-pdh1 {
+  grid-column: 1;
+  grid-row: 1 / 1;
+  text-align: center;
+  font-size: 1rem;
+  color: #111011;
+  text-shadow: 0.03125rem 0.03125rem #F0221D;
+  /* 0.0625rem 0.0625rem */
+}
+.h1-p {
+  font-size: 0.5rem;
+}
+.hero-pdhi1 {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+  object-fit: cover;
+}
+.hero-pdhi1 > img {
+  border-radius: 100%;
+  padding: 1%;
+  width: 5rem;
+}
+/* why pet drug h1 */
+.hero-wpd {
+  grid-column: 1;
+  grid-row: 3;
+  text-align: center;
+  object-fit: cover;
+  /* padding: 20%; */
+  padding-top: 1.25%;
+  padding-bottom: 2.5%;
+  color: #f0f0f0;
+  text-shadow: 0.015625rem 0.015625rem #070403;
+  width: 18.9rem;
+}
+.Why-h1 {
+  font-size: 1.5rem;
+}
+.Wh1-p {
+  font-size: 0.675rem;
+}
+#hero-1 {
+  opacity: 1;
+  background-image: url("drug-supp-service-asset/hero-section-petdrug1024x683.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 1.25%;
+}
+#hero-2 {
+  opacity: 1;
+  /* transition: all 300ms ease-in-out; */
+  color: azure;
+  text-shadow: 0.01575rem 0.01575rem #070403;
+  background-color: rgba(240, 34, 29, 0.15);
+  border-radius: 1.25%;
+}
+  /* border-top-left-radius: 100%; */
+  /* border-top-left-radius: 100%; */
+  /* filter: drop-shadow(16px 16px 20px) invert(75%); */
+  /* #hero-2:hover {
+    opacity: 1;
+  }  */
+.hero-cta {
+  grid-column: 1;
+  grid-row: 4;
+  text-align: center;
+}
+/* Call to Action / CTA Button */
+#b-product {
+  grid-column: 1;
+  grid-row: 5;
+  background-color: #F0221D;
+  /* color: #f0f0f0; */
+  border-radius: 12.5%;
+  padding: 0.1825%;
+  font-size: 0.4125rem;
+  /* text-shadow: 0.063rem 0.063rem #070403; */
+}
+.b-other {
+  grid-column: 1;
+  grid-row: 6;
+  background-color: #f0f0f0;
+  border-radius: 12.5%;
+  padding: 0.1125%;
+  font-size: 0.2825rem;
+}
+footer{
+  font-size: 0.5rem;
+}
+header{
+  font-size: 0.5rem;
+}
+#ul-menu {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding-right: 22.5rem;
+  color: #111;
+  /* font-size: 0.005rem; */
+  padding-top: 2rem;
+  margin-top: 0.0025rem;
+}
 }

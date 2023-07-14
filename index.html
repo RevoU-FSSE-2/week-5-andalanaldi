@@ -18,47 +18,88 @@
 <body>
     <header class="showcase">
         <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-            <div class="toggle">Hamburger</div>
+            <figure class="relative-place">
+                <div class="display-icon">
+                    <div>
+                        <img class="pet-icon" 
+                        src="content-assets/dog-cat-pet-shop-vector-200s.jpg"
+                        alt="Happy Cat and Dog touches each other Icon">
+                        <!-- <b>Pet Drug</b> -->
+                    </div> 
+                    <div class="pet-drug-h">Pet Drug</div>
+                    <!-- <b class="pet-drug-h">Pet Drug</b> -->
+                    <span class="circle-white">8</span>
+                    <!-- <div class="pet-drug-h"> -->
+                    <!-- <b>Pet Drug</b> -->
+                </div>
+            </figure>
+
+                <!-- </figure> excess 2 </div> -->
+                <!-- </div> -->
+        </nav>
+        <nav>
+            <div class="display-menu">
+                <ul id="ul-menu">
+                    <li><a href="#Pet-Drug-h1">Home</a></li>
+                    <li><a href="#Products">Products</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Pet-Drug-h1">About Us</a></li>
+                    <li><a href="#Contact-us">Contact Us</a></li>
+                </ul>
+            
+                <!-- <div class="toggle">
+                    <img id="stack-cat"
+                    src="content-assets/Cat_200x190_DreamShaper_v7_Please_make_a_vector_icon_image_of_stacked_cats_0.jpg"
+                    alt="Cats are stacked on top of each other similar with hamburger"
+                    >
+                </div>
+                <div class="close-icon">
+                    <img
+                    src="https://i.ibb.co/rt3HybH/close.png"
+                    alt="close button"
+                    >
+                </div> -->
+            </div>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Pet Drug</h1>
-            <p>a member of noTaher Group</p>
-            <p>Keeping Pets Healthy and Happy, One Step at a Time</p>
-            <p>Your Pet One Stop Solution</p>
-        </section>
-        <section>
-            <h1>Why Pet Drug?</h1>
-            <p>At Pet Drug, we are dedicated to promoting the health and well-being of pets. Our mission is to provide pet owners with access to high-quality drugs, vaccines, and supplements that are essential for their pets' overall health and happiness.</p>
-            <p>We believe that every pet deserves the best care. That's why we strive to offer a wide range of trusted products that meet the highest standards of safety, effectiveness, and affordability.</p>
-            <p>Our commitment to pet health extends beyond providing products. We aim to educate pet owners, empower them to make informed decisions, and support them in their journey to raise healthy and thriving pets.</p>
-            <div>
-                <!-- a call to action / cta -->
-                <button>Explore Our Products</button>
-                <button>Discover Our Services</button>
-                <button>Book an Appointment</button>
-                <!-- <button>Shop Now</button> -->
-                <!-- <button>Get Started</button>
-                <button>Learn More</button> -->
-                <!-- please reconsider in using Shop Now, Get Started, and Learn More Button -->
+        <section class="hero-section">
+            <div class="grid-container">
+                <div class="hero-pdh1" id="hero-m1">
+                    <h1 id="Pet-Drug-h1">Pet Drug</h1>
+                    <p class="h1-p">a member of noTaher Group</p>
+                    <p class="h1-p">Keeping Pets Healthy and Happy, One Step at a Time</p>
+                    <p class="h1-p">Your Pet One Stop Solution</p>
+                </div>
+                <div class="hero-pdhi1" id="hero-0">
+                    <img 
+                    srcset="content-assets/CatssnDog_400x361_DreamShaper_v7_Please_make_a_vector_icon_image_of_cat_and_dog_2(2).jpg" 
+                    alt="Cats and Dog are seeing the unseen">
+                </div>
+                <div class="hero-wpd" id="hero-1">
+                    <!-- <img 
+                    srcset="drug-supp-service-asset/hero-section-petdrug1024x683.jpg" 
+                    alt=""> -->
+                </div>
+                <div class="hero-wpd" id="hero-2">
+                    <h1 class="Why-h1">Why Pet Drug?</h1>
+                    <p class="Wh1-p">At Pet Drug, we are dedicated to promoting the health and well-being of pets. Our mission is to provide pet owners with access to high-quality drugs, vaccines, and supplements that are essential for their pets' overall health and happiness.</p>
+                    <p class="Wh1-p">We believe that every pet deserves the best care. That's why we strive to offer a wide range of trusted products that meet the highest standards of safety, effectiveness, and affordability.</p>
+                    <p class="Wh1-p">Our commitment to pet health extends beyond providing products. We aim to educate pet owners, empower them to make informed decisions, and support them in their journey to raise healthy and thriving pets.</p>    
+                    <div class="hero-cta" id="hero-3">
+                        <button id="b-product"><a href="#Products">Explore Our Products</a></button>
+                        <button class="b-other" id="b-service"><a href="#Services">Discover Our Services</a></button>
+                        <button class="b-other" id="b-book"><a href="#Book">Book an Appointment</a></button>
+                    </div>
+                </div>
             </div>
         </section>
         <section>
-            <figure></figure>
-                <div>
-                    <!-- please consider to delete 2 div tag -->
-                    <div>
-                        <h2>Our Products</h2>
-                            <h3>Pet Drugs<h3>
-                            <p>we have 5 main products of our pet drugs</p>
+                    <div class="product-section">
+                        <h2 id="Our-Products">Our Products</h2>
+                            <h3 class="P-drug">Pet Drugs<h3>
+                            <p class="P-drug">we have 5 main products of our pet drugs</p>
+                    </div>
         </section>
         <section class="sliders-pd">
                                     <div class="slider-pd">
@@ -97,11 +138,13 @@
                                     </div>
         </section>              
         <section>     
+                        <div class="Vaccine-section">
                             <h3>Vaccines<h3>
-                            <p>we have 3 main products of our vaccines</p>
-                                <h4>Core vaccines</h4>
-                                <p>These vaccines are recommended for all pets, regardless of their lifestyle or exposure risk. They include vaccines against:</p>
-        </section>
+                            <p class="P-vac">we have 3 main products of our vaccines</p>
+                                <h4 class="our-v">Core vaccines</h4>
+                                <p class="P-vac">These vaccines are recommended for all pets, regardless of their lifestyle or exposure risk. They include vaccines against:</p>
+                        </div>
+                            </section>
         <section class="sliders">  
                                     <div class="slider">
                                         <div class="slides">
@@ -132,9 +175,11 @@
                                             <a href="#slide-4">4</a>
                                     </div>
         </section> 
-        <section>                        
+        <section>
+                            <div class="Nc-section">                        
                                 <h4>Non-core vaccines</h4>
-                                <p>These vaccines are not recommended for all pets, but may be necessary for pets with certain lifestyle or exposure risks. They include vaccines against:</p>   
+                                <p class="P-ncvac">These vaccines are not recommended for all pets, but may be necessary for pets with certain lifestyle or exposure risks. They include vaccines against:</p>   
+                            </div>
         </section>
         <section class="sliders-nc">                        
                                 <div class="slider-nc">
@@ -161,8 +206,10 @@
                                 </div>
         </section>
         <section>
+                            <div class="Cv-section">
                                 <h4>Combination vaccines</h4>
-                                <p>These vaccines combine multiple vaccines into a single shot, which can make it easier and more convenient to vaccinate your pet. Some common combination vaccines include:</p>
+                                <p class="P-cvac">These vaccines combine multiple vaccines into a single shot, which can make it easier and more convenient to vaccinate your pet. Some common combination vaccines include:</p>
+                            </div>
         </section>
         <section class="sliders-cv">
                             <div class="slider-cv">
@@ -188,9 +235,11 @@
                                         <a href="#slide-10">3</a>
                             </div>
         </section>          
-        <section>                                                 
-                                <h3>Supplements<h3>
-                                    <p>we have 5 main products of our supplements</p>
+        <section>               
+                                <div class="Supp-section">                                  
+                                    <h3>Supplements<h3>
+                                        <p class="P-supplement">we have 5 main products of our supplements</p>
+                                </div>
         </section>
         <section class="sliders-su">
                                         <div class="slider-su">
@@ -229,9 +278,11 @@
                                         </div>
         </section>              
         <section>
-                        <h2>Our Services</h2>
-                            <h3>Consultations</h3>
-                            <p>we have 3 main consultations</p>
+                    <tag class="Our-services">
+                        <h2 id="Services">Our Services</h2>
+                            <h3 class="h3-cons">Consultations</h3>
+                            <p class="P-cons">we have 3 main consultations</p>
+                    </tag>
         </section>
         <section class="sliders-cu">
             <div class="slider-cu">
@@ -258,8 +309,10 @@
             </div>
         </section>    
         <section>
+                        <div class="Vacs-Sect">
                             <h3>Vaccinations</h3>
-                            <p>Our veterinary clinic provides a wide range of vaccination services to help protect your pets from preventable diseases. Our experienced veterinarians will assess your pets' vaccination needs and administer the appropriate vaccines to ensure their optimal health. We follow recommended vaccination schedules and provide personalized recommendations based on your pets' age, lifestyle, and risk factors. Trust our professional team to provide safe and effective vaccination services for your beloved pets.</p>
+                            <p class="Vac-P">Our veterinary clinic provides a wide range of vaccination services to help protect your pets from preventable diseases. Our experienced veterinarians will assess your pets' vaccination needs and administer the appropriate vaccines to ensure their optimal health. We follow recommended vaccination schedules and provide personalized recommendations based on your pets' age, lifestyle, and risk factors. Trust our professional team to provide safe and effective vaccination services for your beloved pets.</p>
+                        </div>
         </section>
         <section class="sliders-va">
             <div class="slider-va">
@@ -286,16 +339,10 @@
             </div>
         </section> 
         <section>
+                        <div class="Our-CU">
                             <h3>Check-Up Services</h3>
-                            <p>We have 4 core services on pet check-ups</p>
-                                <h4></h4>
-                                <p></p>  
-                                <h4></h4>
-                                <p></p>   
-                                <h4></h4>
-                                <p></p>
-                                <h4></h4>
-                                <p></p>    
+                            <p class="CU-P">We have 4 core services on pet check-ups</p>
+                        </div>   
         </section>
         <section class="sliders-cus">
             <div class="slider-cus">
@@ -328,53 +375,41 @@
             </div>
         </section> 
         <section>
-                    <div>
-                        <form action="#" method="GET" class="Appointment">
-                            <h4>Appointment Booking</h4>
+                    <!-- <div> -->
+                        <h4 id="Book">Appointment Booking</h4>
+                        <form action="#" method="GET" class="Appointment" id="Book-Us">
                             <fieldset>
                                 <legend>Get in Touch with The Only One who Cares</legend>
-                                <div>
+                                
                                     <label for="fname">Full name:</label>
                                     <input type="text" id="fname" name="fname" required><br><br>
-                                </div>
-                                <div>
+
                                     <label for="email">Email:</label>
                                     <input type="email" id="email" name="email" required><br><br>
-                                </div>
-                                <div>
+
                                     <label for="phone">Phone:</label>
                                     <input type="tel" id="phone" name="phone" required><br><br>
-                                </div>
-                                <div>
+
                                     <label for="pname">Full name:</label>
                                     <input type="text" id="pname" name="pname"><br><br>
-                                </div>
-                                <div>
+
                                     <label for="time-pref">Date & Time Preference:</label>
                                     <input type="datetime-local" id="time-pref" name="time-pref" required><br><br>
-                                </div>
-                                <div>
+
                                     <p>Service that you need:</p>
                                     <label for="Vaccination">Vaccination</label>
-                                    <input type="radio" id="" name="Vaccination" required><br><br>
+                                    <input type="radio" id="" name="Service" value="Vaccination" required onclick="radioHandle('Vaccination')"><br><br>
                                     <label for="Check-Up">Check-Up</label>
-                                    <input type="radio" id="Check-Up" name="Check-Up" required><br><br>
-                                    <label for="Grooming">Vaccination</label>
-                                    <input type="radio" id="Grooming" name="Grooming" required><br><br>
-                                    <!-- please add other, could only be added by javascript -->
-                                </div>
+                                    <input type="radio" id="Check-Up" name="Service" value="Check-Up" onclick="radioHandle('Check-Up')"><br><br>
+                                    <label for="Grooming">Grooming</label>
+                                    <input type="radio" id="Grooming" name="Service" value="Grooming" onclick="radioHandle('Grooming')"><br><br>
+                                    <label for="Other">Other:</label>
+                                    <input type="radio" id="Other" name="Service" value="Other" onclick="radioHandle('Other')"><br><br>
+                                    <input type="text" id="Other-alt" name="Service-alt"><br><br>
+
                                 <button type="submit" value="submit">Book Us &#129330</button>
                             </fieldset>
-                                <!-- <label></label>
-                                <input>
-                                <label></label>
-                                <input>
-                                <label></label>
-                                <input> -->
-                            </div>
                         </form>
-                    </div>
-                </div>
         </section>
         <section>
             <figure>
@@ -427,7 +462,7 @@
             </div>
         </section>
         <section id="contact-us">
-            <h2>Contact Us</h2>
+            <h2 id="Contact-us">Contact Us</h2>
             <p>Email: <a href="mailto:info@notahergroup.site">info@notahergroup.site</a></p>
             <p>Phone: <a href="tel:+6281931342013">+62 819 3134 2013</a></p>
             <p>Address: Jl. Encan Aya No.99, Kota Bandung, Jawa Barat 40275</p>
@@ -459,6 +494,6 @@
         </nav>
         Copyright &copy; 2023 noTaher Group. All rights reserved.
     </footer>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 </html>
