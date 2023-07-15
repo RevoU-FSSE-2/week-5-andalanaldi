@@ -747,6 +747,289 @@ footer {
 
 /* Screen larger than 1024px (Desktop)? 3 columns */
 @media (min-width: 1024px) {
+  .flea320{
+    display: none;
+  }
+  .flea768{
+    display: none;
+  }
+  .flea1024{
+    display: block;
+  }
+  .mob320{
+    display: none;
+  }
+  .mob768{
+    display: none;
+  }
+  .mob1024{
+    display: block;
+  }
+  .skin320{
+    display: none;
+  }
+  .skin768{
+    display: none;
+  }
+  .skin1024{
+    display: block;
+  }
+  .digest320{
+    display: none;
+  }
+  .digest768{
+    display: none;
+  }
+  .digest1024{
+    display: block;
+  }
+  .dental320{
+    display: none;
+  }
+  .dental768{
+    display: none;
+  }
+  .dental1024{
+    display: block;
+  }
+  .neopar320{
+    display: none;
+  }
+  .neopar768{
+    display: none;
+  }
+  .neopar1024{
+    display: block;
+  }
+  .neovac320{
+    display: none;
+  }
+  .neovac768{
+    display: none;
+  }
+  .neovac1024{
+    display: block;
+  }
+  .canin320{
+    display: none;
+  }
+  .canin768{
+    display: none;
+  }
+  .canin1024{
+    display: block;
+  }
+  .rak320{
+    display: none;
+  }
+  .rak768{
+    display: none;
+  }
+  .rak1024{
+    display: block;
+  }
+  .cantrac320{
+    display: none;
+  }
+  .cantrac768{
+    display: none;
+  }
+  .cantrac1024{
+    display: block;
+  }
+  .nobi320{
+    display: none;
+  }
+  .nobi768{
+    display: none;
+  }
+  .nobi1024{
+    display: block;
+  }
+  .lyme320{
+    display: none;
+  }
+  .lyme768{
+    display: none;
+  }
+  .lyme1024{
+    display: block;
+  }
+  .zoe320{
+    display: none;
+  }
+  .zoe768{
+    display: none;
+  }
+  .zoe1024{
+    display: block;
+  }
+  .dhp320{
+    display: none;
+  }
+  .dhp768{
+    display: none;
+  }
+  .dhp1024{
+    display: block;
+  }
+  .dap320{
+    display: none;
+  }
+  .dap768{
+    display: none;
+  }
+  .dap1024{
+    display: block;
+  }
+   /*  */
+ .join320{
+  display: none;
+}
+.join768{
+  display: none;
+}
+.join1024{
+  display: block;
+}
+
+.sskin320{
+  display: none;
+}
+.sskin768{
+  display: none;
+}
+.sskin1024{
+  display: block;
+}
+  
+.sdig320{
+  display: none;
+}
+.sdig768{
+  display: none;
+}
+.sdig1024{
+  display: block;
+}
+
+.imun320{
+  display: none;
+}
+.imun768{
+  display: none;
+}
+.imun1024{
+  display: block;
+}
+.eye320{
+  display: none;
+}
+.eye768{
+  display: none;
+}
+.eye1024{
+  display: block;
+}
+/*  */
+.nut320{
+  display: none;
+}
+.nut768{
+  display: none;
+}
+.nut1024{
+  display: block;
+}
+.beha320{
+  display: none;
+}
+.beha768{
+  display: none;
+}
+.beha1024{
+  display: block;
+}
+.heal320{
+  display: none;
+}
+.heal768{
+  display: none;
+}
+.heal1024{
+  display: block;
+}
+ 
+/*  */
+.kor320{
+  display: none;
+}
+.kor768{
+  display: none;
+}
+.kor1024{
+  display: block;
+}
+.lif320{
+  display: none;
+}
+.lif768{
+  display: none;
+}
+.lif1024{
+  display: block;
+}
+.pup320{
+  display: none;
+}
+.pup768{
+  display: none;
+}
+.pup1024{
+  display: block;
+}
+/*  */
+.sic320{
+  display: none;
+}
+.sic768{
+  display: none;
+}
+.sic1024{
+  display: block;
+}
+
+.rou320{
+  display: none;
+}
+.rou768{
+  display: none;
+}
+.rou1024{
+  display: block;
+}
+
+.sen320{
+  display: none;
+}
+.sen768{
+  display: none;
+}
+.sen1024{
+  display: block;
+}
+
+.pre320{
+  display: none;
+}
+.pre768{
+  display: none;
+}
+.pre1024{
+  display: block;
+}
+
+
   .cards { 
     grid-template-columns: repeat(3, 1fr); 
     max-width: 100rem;
@@ -758,7 +1041,289 @@ footer {
 
 /* Screen no larger than 768px (Tablet)? 2 column */
 @media (max-width: 768px) {
-  /* pet drug h1 */
+  .flea320{
+    display: none;
+  }
+  .flea768{
+    display: block;
+  }
+  .flea1024{
+    display: none;
+  }
+  .mob320{
+    display: none;
+  }
+  .mob768{
+    display: block;
+  }
+  .mob1024{
+    display: none;
+  }
+  .skin320{
+    display: none;
+  }
+  .skin768{
+    display: block;
+  }
+  .skin1024{
+    display: none;
+  }
+  .digest320{
+    display: none;
+  }
+  .digest768{
+    display: block;
+  }
+  .digest1024{
+    display: none;
+  }
+  .dental320{
+    display: none;
+  }
+  .dental768{
+    display: block;
+  }
+  .dental1024{
+    display: none;
+  }
+  .neopar320{
+    display: none;
+  }
+  .neopar768{
+    display: block;
+  }
+  .neopar1024{
+    display: none;
+  }
+  .neovac320{
+    display: none;
+  }
+  .neovac768{
+    display: block;
+  }
+  .neovac1024{
+    display: none;
+  }
+  .canin320{
+    display: none;
+  }
+  .canin768{
+    display: block;
+  }
+  .canin1024{
+    display: none;
+  }
+  .rak320{
+    display: none;
+  }
+  .rak768{
+    display: block;
+  }
+  .rak1024{
+    display: none;
+  }
+  .cantrac320{
+    display: none;
+  }
+  .cantrac768{
+    display: block;
+  }
+  .cantrac1024{
+    display: none;
+  }
+  .nobi320{
+    display: none;
+  }
+  .nobi768{
+    display: block;
+  }
+  .nobi1024{
+    display: none;
+  }
+  .lyme320{
+    display: none;
+  }
+  .lyme768{
+    display: block;
+  }
+  .lyme1024{
+    display: none;
+  }
+  .zoe320{
+    display: none;
+  }
+  .zoe768{
+    display: block;
+  }
+  .zoe1024{
+    display: none;
+  }
+  .dhp320{
+    display: none;
+  }
+  .dhp768{
+    display: block;
+  }
+  .dhp1024{
+    display: none;
+  }
+  .dap320{
+    display: none;
+  }
+  .dap768{
+    display: block;
+  }
+  .dap1024{
+    display: none;
+  }
+ /*  */
+ .join320{
+  display: none;
+}
+.join768{
+  display: block;
+}
+.join1024{
+  display: none;
+}
+
+.sskin320{
+  display: none;
+}
+.sskin768{
+  display: block;
+}
+.sskin1024{
+  display: none;
+}
+  
+.sdig320{
+  display: none;
+}
+.sdig768{
+  display: block;
+}
+.sdig1024{
+  display: none;
+}
+
+.imun320{
+  display: none;
+}
+.imun768{
+  display: block;
+}
+.imun1024{
+  display: none;
+}
+
+.eye320{
+  display: none;
+}
+.eye768{
+  display: block;
+}
+.eye1024{
+  display: none;
+}
+/*  */
+.nut320{
+  display: none;
+}
+.nut768{
+  display: block;
+}
+.nut1024{
+  display: none;
+}
+.beha320{
+  display: none;
+}
+.beha768{
+  display: block;
+}
+.beha1024{
+  display: none;
+}
+.heal320{
+  display: none;
+}
+.heal768{
+  display: block;
+}
+.heal1024{
+  display: none;
+}
+/*  */
+.kor320{
+  display: none;
+}
+.kor768{
+  display: block;
+}
+.kor1024{
+  display: none;
+}
+.lif320{
+  display: none;
+}
+.lif768{
+  display: block;
+}
+.lif1024{
+  display: none;
+}
+.pup320{
+  display: none;
+}
+.pup768{
+  display: block;
+}
+.pup1024{
+  display: none;
+}
+
+/*  */
+.sic320{
+  display: none;
+}
+.sic768{
+  display: block;
+}
+.sic1024{
+  display: none;
+}
+
+.rou320{
+  display: none;
+}
+.rou768{
+  display: block;
+}
+.rou1024{
+  display: none;
+}
+
+.sen320{
+  display: none;
+}
+.sen768{
+  display: block;
+}
+.sen1024{
+  display: none;
+}
+
+.pre320{
+  display: none;
+}
+.pre768{
+  display: block;
+}
+.pre1024{
+  display: none;
+}
+/* pet drug h1 */
 .hero-pdh1 {
   grid-column: 1;
   grid-row: 1 / 1;
@@ -775,7 +1340,284 @@ footer {
 
 /* Screen no larger than 320px (Mobile)? 1 column */
 @media (max-width: 320px) {
+/*  */
+.kor320{
+  display: block;
+}
+.kor768{
+  display: none;
+}
+.kor1024{
+  display: none;
+}
+.lif320{
+  display: block;
+}
+.lif768{
+  display: none;
+}
+.lif1024{
+  display: none;
+}
+.pup320{
+  display: block;
+}
+.pup768{
+  display: none;
+}
+.pup1024{
+  display: none;
+}
+/*  */
+.sic320{
+  display: block;
+}
+.sic768{
+  display: none;
+}
+.sic1024{
+  display: none;
+}
+.rou320{
+  display: block;
+}
+.rou768{
+  display: none;
+}
+.rou1024{
+  display: none;
+}
+.sen320{
+  display: block;
+}
+.sen768{
+  display: none;
+}
+.sen1024{
+  display: none;
+}
+.pre320{
+  display: block;
+}
+.pre768{
+  display: none;
+}
+.pre1024{
+  display: none;
+}
+/*  */
+.flea320{
+  display: block;
+}
+.flea768{
+  display: none;
+}
+.flea1024{
+  display: none;
+}
+.mob320{
+  display: block;
+}
+.mob768{
+  display: none;
+}
+.mob1024{
+  display: none;
+}
+.skin320{
+  display: block;
+}
+.skin768{
+  display: none;
+}
+.skin1024{
+  display: none;
+}
+.digest320{
+  display: block;
+}
+.digest768{
+  display: none;
+}
+.digest1024{
+  display: none;
+}
+.dental320{
+  display: block;
+}
+.dental768{
+  display: none;
+}
+.dental1024{
+  display: none;
+}
+.neopar320{
+  display: block;
+}
+.neopar768{
+  display: none;
+}
+.neopar1024{
+  display: none;
+}
+.neovac320{
+  display: block;
+}
+.neovac768{
+  display: none;
+}
+.neovac1024{
+  display: none;
+}
+.canin320{
+  display: block;
+}
+.canin768{
+  display: none;
+}
+.canin1024{
+  display: none;
+}
+.rak320{
+  display: block;
+}
+.rak768{
+  display: none;
+}
+.rak1024{
+  display: none;
+}
+.cantrac320{
+  display: block;
+}
+.cantrac768{
+  display: none;
+}
+.cantrac1024{
+  display: none;
+}
+.nobi320{
+  display: block;
+}
+.nobi768{
+  display: none;
+}
+.nobi1024{
+  display: none;
+}
+.lyme320{
+  display: block;
+}
+.lyme768{
+  display: none;
+}
+.lyme1024{
+  display: none;
+}
+.zoe320{
+  display: block;
+}
+.zoe768{
+  display: none;
+}
+.zoe1024{
+  display: none;
+}
+.dhp320{
+  display: block;
+}
+.dhp768{
+  display: none;
+}
+.dhp1024{
+  display: none;
+}
+.dap320{
+  display: block;
+}
+.dap768{
+  display: none;
+}
+.dap1024{
+  display: none;
+}
+ /*  */
+.join320{
+  display: block;
+}
+.join768{
+  display: none;
+}
+.join1024{
+  display: none;
+}
 
+.sskin320{
+  display: block;
+}
+.sskin768{
+  display: none;
+}
+.sskin1024{
+  display: none;
+}
+  
+.sdig320{
+  display: block;
+}
+.sdig768{
+  display: none;
+}
+.sdig024{
+  display: none;
+}
+
+.imun320{
+  display: block;
+}
+.imun768{
+  display: none;
+}
+.imun1024{
+  display: none;
+}
+.eye320{
+  display: block;
+}
+.eye768{
+  display: none;
+}
+.eye1024{
+  display: none;
+}
+/*  */
+.nut320{
+  display: block;
+}
+.nut768{
+  display: none;
+}
+.nut1024{
+  display: none;
+}
+.beha320{
+  display: block;
+}
+.beha768{
+  display: none;
+}
+.beha1024{
+  display: none;
+}
+.heal320{
+  display: block;
+}
+.heal768{
+  display: none;
+}
+.heal1024{
+  display: none;
+}
 .grid-container{
   display: grid;
   gap: 0.3125rem;
